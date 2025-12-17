@@ -26,6 +26,20 @@ npm run build
 npm run preview
 ```
 
+## Deployment (GitHub Pages)
+
+- URL: https://kiki-lee.github.io/agenda_mover/
+- Deploys: automatically on every push to `main` via GitHub Actions.
+- Vite base: configured as `/agenda_mover/` in `vite.config.ts` for correct asset paths.
+
+### How it works
+- Workflow: see .github/workflows/deploy.yml — it builds the app and publishes the `dist` folder to GitHub Pages.
+- First deployment can take 1–2 minutes after a push; check the Actions tab for status.
+
+### Local tips
+- Dev: `npm run dev` then visit http://localhost:5173/agenda_mover/
+- Preview prod: `npm run build && npm run preview`
+
 ## Notes
 
 - Break and Lunch rows are computed from settings and are not draggable. Change the break/lunch settings to see them move.
