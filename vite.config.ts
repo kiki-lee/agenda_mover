@@ -5,6 +5,8 @@ import react from '@vitejs/plugin-react';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  // Set base path for GitHub Pages project site: https://kiki-lee.github.io/agenda_mover/
+  base: '/agenda_mover/',
   resolve: {
     alias: {
       // Use Vite's root-relative aliases to avoid Node URL helpers
